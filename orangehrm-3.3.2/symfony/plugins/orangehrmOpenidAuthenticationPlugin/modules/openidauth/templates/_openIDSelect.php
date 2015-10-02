@@ -23,10 +23,10 @@
 
         <?php if (isset($form)) {
             echo $form['_csrf_token']->render();
-            echo __('Alternative Login');
-            ?> : <?php echo $form['openIdProvider']->render(); ?>
+          
+            ?> : <?php  ?>
 
-            <input type="button" value="<?php echo __('Login'); ?>" name="openIdLogin" id="openIdLogin"/>
+            
         <?php } ?>
     </form>
 </div>

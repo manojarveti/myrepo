@@ -6,13 +6,10 @@ $cultureElements = explode('_', $sf_user->getCulture());
     
     <head>
 
-        <title>OrangeHRM</title>
+        <title>HRM</title>
         
         <?php include_http_metas() ?>
         <?php include_metas() ?>
-        
-        <link rel="shortcut icon" href="<?php echo theme_path('images/favicon.ico')?>" />
-        
         <!-- Library CSS files -->
         <link href="<?php echo theme_path('css/reset.css')?>" rel="stylesheet" type="text/css"/>
         <link href="<?php echo theme_path('css/tipTip.css')?>" rel="stylesheet" type="text/css"/>

@@ -42,7 +42,7 @@ class SystemUserForm extends BaseForm {
 
         $this->setWidgets(array(
             'userId' => new sfWidgetFormInputHidden(),
-            'userType' => new sfWidgetFormSelect(array('choices' => $userRoleList), array("class" => "formSelect", "maxlength" => 3)),
+            'userType' => new sfWidgetFormSelect(array('choices' => $userRoleList), array("class" => "formSelect", "maxlength" => 5)),
             'employeeName' => new ohrmWidgetEmployeeNameAutoFill(array(), $empNameStyle),
             'userName' => new sfWidgetFormInputText(array(), array("class" => "formInputText", "maxlength" => 40)),
             'status' => new sfWidgetFormSelect(array('choices' => $statusList), array("class" => "formSelect", "maxlength" => 3)),

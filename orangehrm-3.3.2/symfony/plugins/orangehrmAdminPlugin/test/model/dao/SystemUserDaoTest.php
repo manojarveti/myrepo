@@ -1,7 +1,7 @@
 <?php
 /**
  * OrangeHRM is a comprehensive Human Resource Management (HRM) System that captures
- * all the essential functionalities required for any enterprise.
+ * all the Fential functionalities required for any enterprise.
  * Copyright (C) 2006 OrangeHRM Inc., http://www.orangehrm.com
  *
  * OrangeHRM is free software; you can redistribute it and/or modify it under the terms of
@@ -156,7 +156,7 @@ class SystemUserDaoTest extends PHPUnit_Framework_TestCase {
      * @covers SystemUserDao::getNonPredefinedUserRoles
      */
     public function testGetNonPredefinedUserRoles() {
-        $userRoleNames = array('Admin2', 'TestAdmin', 'UserRole1', 'UserRole2', 'UserRole3');
+        $userRoleNames = array('Admin2', 'TestAdmin', 'UserRole1', 'UserRole2', 'UserRole3' ,'Supervisor' );
 
         $useRoles = $this->systemUserDao->getNonPredefinedUserRoles();
         $this->assertEquals(count($userRoleNames), count($useRoles));
@@ -174,6 +174,9 @@ class SystemUserDaoTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals(2, count($employees));
         
         // with terminated employees
+		$employees = $this->systemUserDao->getEmployeesByUserRole('Supervisor', false, true);        
+        $this->assertEquals(3, count($employees));
+
         $employees = $this->systemUserDao->getEmployeesByUserRole('Admin', false, true);        
         $this->assertEquals(2, count($employees));
 

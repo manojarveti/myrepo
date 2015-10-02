@@ -40,7 +40,7 @@ class SystemUserServiceTest extends PHPUnit_Framework_TestCase {
     public function testGetNonPredefinedUserRoles() {
         $userRoles = new Doctrine_Collection('UserRole');
 
-        for ($i = 0; $i < 2; $i++) {
+        for ($i = 0; $i < 3; $i++) {
             $userRole = new UserRole();
             $userRole->setId($i+1);
             $userRole->setName("test name".$i+1);

@@ -13,4 +13,3 @@
           
         </div> <!-- wrapper -->
         
-<?php require_once '_footer.php'; ?>
