@@ -6,7 +6,7 @@ body {
 }
 a {
 	outline:none;
-    color:#a11a11;
+    color:#5d5d5d;
 }
 textarea {
     font-family:Arial, Helvetica, sans-serif;
@@ -14,6 +14,13 @@ textarea {
 /* ================ HTML element styles: End ================ */
 
 /* ================ Application header styles: Begin ================ */
+#branding {
+	height:91px;
+	padding:0 25px 0 25px;
+}
+#branding img {
+	margin:14px 0 0 0;
+}
 .subscribe {
 	padding:10px 15px 12px 15px;
 	font-size:13px;
@@ -72,8 +79,7 @@ textarea {
 	text-decoration:underline;
 }
 #help {
-	color:#CC33FF
-;
+	color:#f28c38;
 	background: url(../images/help-down.png) no-repeat center right;
 	padding:2px 15px 1px 1px;
 	text-decoration:none;
@@ -180,7 +186,7 @@ textarea {
     position:absolute;
     left:-9999px;
     height:36px;
-    background:green left bottom repeat-x;
+    background:url(../images/sub-nav.png) left bottom repeat-x;
     opacity:0;
     padding:4px 0 0 25px;
     width:100%;
@@ -243,7 +249,7 @@ textarea {
 }
 .menu > ul > li > ul > li > ul > li > a {
 	display:block;
-	color:#f45d58;
+	color:#ababab;
 	text-decoration:none;
 	padding:3px 5px 3px 0;
 	white-space:nowrap;
@@ -283,36 +289,30 @@ textarea {
 	color:#fff;
 }
 .menu > ul > li.current > a {
-	background:#CC33FF
-;
+	background:#f28c38;
 	color:#fff;
 }
 .menu > ul > li.current > a b {
-	background:#CC33FF
-;
+	background:#f28c38;
 }
 .menu > ul > li.current > ul {
 	left:0;
 	opacity:1;
 }
 .menu > ul:hover > li.current > a {
-	background:#CC33FF
-;
+	background:#f28c38;
 }
 .menu > ul:hover > li.current > a b {
-	background:#CC33FF
-;
+	background:#f28c38;
 }
 .menu > ul:hover > li.current > ul {
 	left:-9999px;
 }
 .menu > ul:hover > li.current:hover > a {
-	background:#CC33FF
-;
+	background:#f28c38;
 }
 .menu > ul:hover > li.current:hover > a b {
-	background:#CC33FF
-;
+	background:#f28c38;
 }
 .menu > ul:hover > li.current:hover > ul {
 	left:0;
@@ -934,8 +934,7 @@ table.table {
     border-collapse:collapse;    
 }
 table.table th {
-	background:#CC33FF
-;
+	background:#f28c38;
 	color:#fff;
 	padding:7px;
 	border:1px solid #fff;
@@ -1019,7 +1018,7 @@ table.hover tr:hover,
 table.hover tr:hover td, 
 table.hover tr:hover td table tbody tr,
 table.hover tr:hover td table tbody tr td {
-    background-color:#CCC111;
+    background-color:#CCC;
 }
 table.data th { /* Used in performance/performanceReview */
     background: #FFFFFF;
@@ -1311,8 +1310,7 @@ ul.error_list li { /* For Symfony form errors. Used in PIM Define Reports */
 
 .modal-header {
   padding: 12px 15px;
-  background-color:#CC33FF
-;
+  background-color:#f28c38;
   -moz-border-radius-topleft: 4px;
 -webkit-border-top-left-radius: 4px;
  border-top-left-radius: 4px;
@@ -1557,8 +1555,7 @@ div#timesheet table.table tbody tr td.comments, div#edit-timesheet table.table t
 #sidebar #sidenav {
 	margin:19px 0 0 0;
 	padding:7px;
-	background: #CC33FF
- url(../images/sidebar-nav-bg.png) repeat-y top right;
+	background: #f28c38 url(../images/sidebar-nav-bg.png) repeat-y top right;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
