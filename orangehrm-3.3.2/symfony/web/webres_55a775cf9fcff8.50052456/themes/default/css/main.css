@@ -110,7 +110,7 @@ textarea {
 /* ================ Main menu styles: Begin ================ */
 .menu {
 	height:40px;
-	background:url(../images/nav-bg.png) left bottom repeat-x;
+	
 	position:relative;
 	z-index:10;
 }
