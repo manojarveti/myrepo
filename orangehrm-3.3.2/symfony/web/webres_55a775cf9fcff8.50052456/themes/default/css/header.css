@@ -17,7 +17,13 @@ a {
 	min-width:940px;
 	overflow:hidden;
 }
-
+#branding {
+	height:91px;
+	padding:0 25px 0 25px;
+}
+#branding img {
+	margin:14px 0 0 0;
+}
 /* ================ Main menu styles: Begin ================ */
 .menu {
 	height:40px;
