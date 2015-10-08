@@ -11,17 +11,16 @@ include_slot('header', get_partial('global/header'));
         <div id="wrapper">
             
             <div id="branding">
-                <img src="<?php echo theme_path('images/logo.png')?>" width="283" height="56" alt="OrangeHRM"/></a>
+                <img src="<?php echo theme_path('images/logo.png')?>" width="283" height="56"/></a>
                 <!--<a href="http://www.orangehrm.com/user-survey-registration.php" class="subscribe" target="_blank"><?php echo __('Join OrangeHRM Community'); ?></a>-->
                 <a href="#" id="welcome" class="panelTrigger"><?php echo __("Welcome %username%", array("%username%" => $sf_user->getAttribute('auth.firstName'))); ?></a>
                 <div id="welcome-menu" class="panelContainer">
                     <ul>
-                        <li><?php include_component('communication', 'beaconAbout'); ?></li>
                         <li><a href="<?php echo url_for('admin/changeUserPassword'); ?>"><?php echo __('Change Password'); ?></a></li>
                         <li><a href="<?php echo url_for('auth/logout'); ?>"><?php echo __('Logout'); ?></a></li>
                     </ul>
                 </div>
-                  <?php include_component('communication', 'beaconNotification'); ?>
+                  
 <!--                <a href="#" id="help" class="panelTrigger"><?php echo __("Help & Training"); ?></a>
                 <div id="help-menu" class="panelContainer">
                     <ul>
